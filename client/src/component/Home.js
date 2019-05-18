@@ -8,15 +8,19 @@ class Home extends Component {
     return (
       <div className="main">
         <img id="Logo" src={logo}/>
+        <h1>建議用法</h1>
         <div className="paragraph">
           你可以寫<pre>{"<"}img class="RandomPic"{">"}</pre>
-          在html裡，在程式碼加上我們的 script 我們就會自動幫你加上 image Source 囉！也就是經過我們的 script 所有的
+          在html裡，然後再在程式碼中向我們的網站要圖片來自動更新 img source.
           </div>
+          <div className="paragraph">
+            從：
+        </div>
           <div className="paragraph">
             <pre>{"<"}img class="RandomPic"{">"}</pre>
         </div>
         <div className="paragraph">
-            都會變成：
+            變成：
         </div>
         <div className="paragraph">
             <pre>{"<"}img class="RandomPic" src="Some URL"{">"}</pre>
@@ -33,21 +37,26 @@ class Home extends Component {
         <div className="paragraph">
           <pre>{"/api/imgSrc"}</pre>
         </div>
-        
         <div className="paragraph">
-         method:delete,  Content-Type: application/json 然後傳 password 和要刪掉的資源的 source
+         Method: GET,  Content-Type: application/json 然後傳想要取得的圖片集的 tag
+        </div>
+        <div className="paragraph">
+          <pre>{"/api/imgSrc"}</pre>
+        </div>
+        <div className="paragraph">
+         Method: DELETE,  Content-Type: application/json 然後傳 password 和要刪掉的資源的 source
         </div>
         <div className="paragraph">
           <pre>{"/api/imgTags"}</pre> 
         </div>
         <div className="paragraph">
-        method:post,  Content-Type: application/json 然後傳 tagName 和密碼 password
+        Method: POST,  Content-Type: application/json 然後傳 tagName 和密碼 password
         </div>
         <div className="paragraph">
           <pre>{"/api/imgTags"}</pre>
         </div>
         <div className="paragraph">
-        method:delete,  Content-Type: application/json 然後傳 tagName 和密碼 password
+        Method: DELETE,  Content-Type: application/json 然後傳 tagName 和密碼 password
         </div>
       </div>
     );
