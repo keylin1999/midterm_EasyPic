@@ -7,7 +7,7 @@
 3. 在 /client 下執行 npm run-script build
 
 # 開始
-在跟目錄下執行 npm start
+在根目錄下執行 npm start
 
 # 使用與參考之框架/模組/原始碼
 React / Node / MongoDB
